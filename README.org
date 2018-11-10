@@ -1,0 +1,17 @@
+#+TITLE: emacs snap
+
+*work-in-progress* (or rather *on-hold*)
+
+This is my attempt to build emacs 26.1 snap, as there is no package or popular
+repository for this version for ubuntu 18.10 (as of this writing).
+
+The attempt is paused though, because:
+
+- To build a snap, you need ubuntu 16.04 (and we have 18.10).
+- You can work around by using docker or LXD or a VM with 16.04.
+- I've tried docker ([[https://github.com/igor-kupczynski/snapcraft-docker][and it went quite well]]), but then it turned out that docker
+  can't build emacs (this is not a joke, you can't build emacs in a docker
+  container without some hacks, check
+  https://github.com/moby/moby/issues/22801).
+  
+I'm parking that for now, until I find few hours to research LXD builds.
